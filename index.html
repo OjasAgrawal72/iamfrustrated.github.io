@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carzz - Find Your Perfect Car</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+    
+    <!-- Hero Section -->
+    <div class="main-page">
+        <img id="main-bg" src="https://d1rbiogke1jwo5.cloudfront.net/wp-content/uploads/2021/12/Automobile-Transportation-banner-aspect-ratio-1920-650.jpg" alt="Luxury car background">
+        <div class="main-text">
+            <h1>Find the Perfect <br><span id="car">Car</span> for You</h1>
+            <div class="search-container">
+                <input class="search" id="search-input" type="text" placeholder="Search Any Car" autocomplete="off">
+                <div id="suggestions" class="suggestions"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="white-box">
+        <!-- Brands Section -->
+        <p class="section-title">Explore cars by Brand</p>
+        <div class="brands-container">
+            <a href="bmw.html" class="brand-box">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczP1UvewYmBw3XNilgfPMBRSMQ2T0dEOQ_lQ5NrzkVr-TFpV4byOC-D0h3ew_g_eTO2jQsP_Dcdbsr2C6dDrKIsisF6j9x7A_IzxUa5uxdgL6EGLWiA=s300-p-k" alt="BMW logo">
+            </a>
+            <a href="mercedes.html" class="brand-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/2048px-Mercedes-Logo.svg.png" alt="Mercedes logo">
+            </a>
+            <a href="rolls-royce.html" class="brand-box">
+                <img src="https://download.logo.wine/logo/Rolls-Royce_Motor_Cars/Rolls-Royce_Motor_Cars-Logo.wine.png" alt="Rolls Royce logo">
+            </a>
+            <a href="honda.html" class="brand-box">
+                <img src="https://cdn.pixabay.com/photo/2016/08/15/18/18/honda-1596081_1280.png" alt="Honda logo">
+            </a>
+            <a href="toyota.html" class="brand-box">
+                <img src="https://pngimg.com/d/car_logo_PNG1665.png" alt="Toyota logo">
+            </a>
+            <a href="suzuki.html" class="brand-box">
+                <img src="https://pngimg.com/uploads/suzuki/small/suzuki_PNG12291.png" alt="Suzuki logo">
+            </a>
+            <a href="lamborghini.html" class="brand-box">
+                <img src="https://download.logo.wine/logo/Lamborghini/Lamborghini-Logo.wine.png" alt="Lamborghini logo">
+            </a>
+        </div>
+
+
+        <p class="section-title" id="trending">Trending Cars in 2025</p>
+        <div class="cars-container">
+            <div class="car-card">
+                <a href="car.html?car=Tata%20Curvv">
+                    <img src="https://www.team-bhp.com/forum/attachments/official-new-car-reviews/2655692d1726473467-tata-curvv-review-2024_tata_curvv_ev_exterior_15.jpg" alt="Hyundai Creta">
+                </a>
+                <div class="car-info">
+                    <p class="car-name">Car Name: Curvv</p>
+                    <p class="brand">Brand: Tata</p>
+                </div>
+            </div>
+            
+            <div class="car-card">
+                <a href="car.html?car=Mahindra%20BE%206" alt="Mahindra XUV 3XO">
+                    <img src="https://images.hindustantimes.com/auto/img/2024/12/27/600x338/Mahindra_BE_6_1735276140622_1735276356292.jpg" alt="be6">
+                </a>
+                <div class="car-info">
+                    <p class="car-name">Car Name: BE 6</p>
+                    <p class="brand">Brand: Mahindra</p>
+                </div>
+            </div>
+            
+            <div class="car-card">
+                <a href="car.html?car=Maruti%20Suzuki%20E%20Vitara">
+                    <img src="https://gaadiwaadi.com/wp-content/uploads/2024/11/maruti-suzuki-e-Vitara-electric-SUV-2.jpg" alt="e vitara">
+                </a>
+                <div class="car-info">
+                    <p class="car-name">Car Name: E Vitara</p>
+                    <p class="brand">Brand: Maruti Suzuki</p>
+                </div>
+            </div>
+            
+            <div class="car-card">
+                <a href="car.html?car=Mahindra%20XEV%209E">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra-XEV/9e/9262/1732688872801/front-left-side-47.jpg" alt="9e">
+                </a>
+                <div class="car-info">
+                    <p class="car-name">Car Name: XEV 9E</p>
+                    <p class="brand">Brand: Mahindra</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Upcoming Cars -->
+        <p class="section-title" id="upcoming">Upcoming Cars</p>
+        <div class="cars-container">
+            <div class="car-card">
+                <img src="https://media.assettype.com/evoindia%2F2025-01-18%2Fym48db1c%2FHarrier.ev.jpg" alt="harrier ev ">
+                <div class="car-info">
+                    <p class="car-name">Car Name: Harrier EV</p>
+                    <p class="brand">Brand: Tata</p>
+                </div>
+            </div>
+            
+            <div class="car-card">
+                <img src="https://images.hindustantimes.com/auto/img/2024/12/09/1600x900/MG_Cyberster_1733724854486_1733724854727.jpeg" alt="Cyberster">
+                <div class="car-info">
+                    <p class="car-name">Car Name: Cyberster</p>
+                    <p class="brand">Brand: MG</p>
+                </div>
+            </div>
+            
+            <div class="car-card">
+                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Sierra/7515/1679985529341/front-left-side-47.jpg" alt="Tata Sierra">
+                <div class="car-info">
+                    <p class="car-name">Car Name: Sierra</p>
+                    <p class="brand">Brand: TATA</p>
+                </div>
+            </div>
+            
+            <div class="car-card">
+                <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/MG/Majestor/12370/1737206408710/front-left-side-47.jpg" alt="majestor">
+                <div class="car-info">
+                    <p class="car-name">Car Name: Majestor</p>
+                    <p class="brand">Brand: MG</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Footer -->
+        <div class="siteby">
+            
+            <p>A site by ~Ojas Agrawal</p>
+        </div>
+    </div>
+    <script src="https://ojasagrawal71.github.io/iamfrustrated.github.io/search.js"></script>
+    <script>
+        // Basic search functionality
+        document.getElementById('search-input').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            // You would typically make an AJAX call here to get search results
+            // For demo purposes, we'll just log the search term
+            console.log('Searching for:', searchTerm);
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
